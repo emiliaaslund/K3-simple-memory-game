@@ -1,0 +1,87 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(181, 151, 201, 0.925) 0%,
+    rgba(233, 106, 67, 0.726) 100%
+  );
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0px 5px 20px rgb(0, 0, 0, 0.2);
+  font-family: "Bungee Shade", cursive;
+}
+
+.game-container {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.card {
+  width: 170px;
+  height: 190px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.2);
+  position: relative;
+  margin: 7px;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  background: linear-gradient(
+    0deg,
+    rgba(207, 186, 221, 0.459) 0%,
+    rgba(235, 186, 175, 0.568) 100%
+  );
+  cursor: pointer;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+img {
+  width: 100px;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 5px 20px rgb(0, 0, 0, 0.2);
+  font-family: "Bungee Shade", cursive;
+}
+
+.player-container {
+  width: 720px;
+  margin: auto;
+  text-align: center;
+}
+#player1 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 5px 20px rgb(0, 0, 0, 0.2);
+  font-family: "Bungee Shade", cursive;
+}
